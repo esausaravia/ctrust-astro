@@ -1,0 +1,181 @@
+    
+    /*  
+    .col-12{
+        padding-right: 0px;
+    }
+    */
+    
+
+
+    /*
+    sobreescritura de estilos generales
+    **/
+   
+    /**
+    menu
+    */
+
+
+    /** 
+        seccion de productos
+    */
+    
+
+
+
+
+/**
+estilos mobile
+*/
+/*
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size:unset;
+    line-height: 1;
+    color: #FFF;
+    background-color: unset;
+    border: 0px;
+    border-radius: unset;
+    transition:unset;
+}
+.mt--1{
+    margin-top: -5px;
+
+}
+
+.redes-sociales{
+    display: none;
+}
+.siguenos{
+    display: none;
+}
+.nav-item{
+    color: #FFF;
+}
+*/
+@media (max-width: 575.98px) { 
+    /*
+    .bg-nav{
+        background: #000;
+        box-shadow: unset;
+    }
+    .navbar-toggler:focus {
+        box-shadow: unset;
+    }
+    .navbar-collapse{
+        background: linear-gradient(180deg, rgba(234, 0, 38, 0.9) 0%, rgba(182, 112, 177, 0.9) 51.1%, rgba(0, 0, 0, 0.9) 100%);
+        box-shadow: 0px 206px 82px rgba(0, 0, 0, 0.01), 0px 116px 69px rgba(0, 0, 0, 0.05), 0px 51px 51px rgba(0, 0, 0, 0.09), 0px 13px 28px rgba(0, 0, 0, 0.1);
+    }
+    .nav-item{
+        text-align: right;
+        padding-right: 20px;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+    .redes-sociales{
+        display: flex;
+        
+    }
+    .siguenos{
+        display: block;
+        text-align: right;
+        font-size: 12px;
+    }
+
+    .navbar-brand {
+        padding-left: 12px;
+    }
+
+    .navbar-toggler .navbar-toggler-icon {
+        
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M18 6L6 18M6 6l12 12'/%3e%3c/svg%3e");
+      }
+      
+      .navbar-toggler.collapsed .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        
+      }
+      .nav-link:focus, .nav-link:hover {
+        font-weight: bold;
+    }
+     
+    .footer{
+        text-align: center;
+        img{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+
+    .quienes-somos{
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+        }
+        img{
+            margin-top: -100px;
+        }
+    }
+    .nuestra-mision{
+        
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        p{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+
+    .mas-de-nosotros{
+        background-image:unset;
+        .mas-de-nosotros-mobile{
+            background-image: url(../img/saber-mas-fondo-mobile.png);
+            background-position: cover;
+            background-position: bottom;
+            h4{
+                position: relative;
+                font-size: 40px;
+            }
+            img {
+                display: none;
+            }
+        }
+        .trio {
+            height: 420px;
+            justify-content: unset;
+            margin-bottom: -1px;
+        }
+        .pa{
+            position: unset;
+        }
+        
+        h5{
+            
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .formulario{
+            background-color:  #E80013;
+            margin-top: -2px;
+        }
+
+        
+    }
+    */
+    
+}
+@media (min-width: 768px) { }
+@media (min-width: 992px) { }
