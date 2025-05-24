@@ -1,0 +1,103 @@
+---
+import { Image } from "astro:assets";
+
+import banderaMexico from "../../assets/img/bandera-mexico-2.png";
+import banderaPanama from "../../assets/img/bandera-panama-2.png";
+import banderaGuatemala from "../../assets/img/bandera-guatemala-2.png";
+
+import superFarmacia from "../../assets/img/super-farmacia.png";
+import farmaciasDelAhorro from "../../assets/img/farmacias-del-ahorro.svg";
+import yzaFarmacias from "../../assets/img/yza.svg";
+import chedraui from "../../assets/img/chedraui.svg";
+import mercadoLibre from "../../assets/img/mercadolibre.png";
+import issegFarmacias from "../../assets/img/mexico-isseg-farmacias.webp";
+
+import farmaciaMathias from "../../assets/img/panama-farmacia-mathias.png";
+import servifarma from "../../assets/img/panama-servifarma.png";
+import farmaciasGaleno from "../../assets/img/guatemala-farmacias-galeno.png";
+---
+<div class="row" style="background-color: #FFFFFF;">
+    <div class="col">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-12 col-offset-0 col-md-10 offset-md-1 py-5 text-center donde-encontrarnos">
+                    <h2 class="pt-5">¿Dónde pueden encontrarnos?</h2>
+                    <p class="py-2 px-4">¡Trust está más cerca de ti de lo que imaginas! Estamos disponibles en las principales farmacias del país, como:</p>
+                </div>
+            </div>
+
+            <div id="DondeEncontrarTabs" class="tabs text-center ">
+                <ul class="banderas nav justify-content-center" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="donde-mex-tab" data-bs-toggle="tab" data-bs-target="#donde-mex-tab-pane" type="button" role="tab" aria-controls="donde-mex-tab-pane" aria-selected="true">
+                            <span>México</span>
+                            <Image src={banderaMexico} alt="México" />
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="donde-pnm-tab" data-bs-toggle="tab" data-bs-target="#donde-pnm-tab-pane" type="button" role="tab" aria-controls="donde-pnm-tab-pane" aria-selected="false">
+                            <span>Panamá</span>
+                            <Image src={banderaPanama} alt="Panama" />
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="donde-gua-tab" data-bs-toggle="tab" data-bs-target="#donde-gua-tab-pane" type="button" role="tab" aria-controls="donde-gua-tab-pane" aria-selected="false">
+                            <span>Guatemala</span>
+                            <Image src={banderaGuatemala} alt="Guatemala" />
+                        </button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="donde-mex-tab-pane" role="tabpanel" aria-labelledby="donde-mex-tab" tabindex="0">
+                        <div class="py-4 row justify-content-center g-4 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                            <div class="col">
+                                <Image src={superFarmacia} alt="SuperFarmacia" class="donde-logo"/>
+                            </div>
+                            <div class="col">
+                                <Image src={farmaciasDelAhorro} alt="Farmacias del ahorro" class="donde-logo"/>
+                            </div>
+                            <div class="col">
+                                <Image src={yzaFarmacias} alt="yza farmacias" class="donde-logo"/>
+                            </div>
+                            <div class="col">
+                                <Image src={chedraui} alt="CHEDRAUI" class="donde-logo"/>
+                            </div>
+                            <div class="col">
+                                <Image src={mercadoLibre} alt="MercadoLibre" class="donde-logo" style="max-height: 80px; width: auto;"/>
+                            </div>
+                            <div class="col">
+                                <Image src={issegFarmacias} alt="ISSEG" class="donde-logo" style="max-height: 70px;" />
+                            </div>
+                        </div>
+                        <div class="donde-encontrarnos">
+                            <p class="p-4">Y en diferentes farmacias independientes.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="donde-pnm-tab-pane" role="tabpanel" aria-labelledby="donde-pnm-tab" tabindex="0">
+                        <div class="py-4 row align-items-center justify-content-center g-4 row-cols-1 row-cols-md-3">
+                            <div class="col">
+                                <Image src={farmaciaMathias} alt="Farmacia Mathías" class="donde-logo" style="max-height: 58px;"/>
+                            </div>
+                            <div class="col">
+                                <Image src={servifarma} alt="ServiFarma" class="donde-logo" style="max-height: 160px;"/>
+                            </div>
+                        </div>
+                        <div class="donde-encontrarnos">
+                            <p class="p-4">Y en diferentes farmacias independientes.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="donde-gua-tab-pane" role="tabpanel" aria-labelledby="donde-gua-tab" tabindex="0">
+                        <div class="py-4 row align-items-center justify-content-center g-4 row-cols-1">
+                            <div class="col">
+                                <Image src={farmaciasGaleno} alt="Farmacias Galeno" class="donde-logo" style="max-height: 150px;"/>
+                            </div>
+                        </div>
+                        <div class="donde-encontrarnos">
+                            <p class="p-4">Y en diferentes farmacias independientes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end donde encontrar -->

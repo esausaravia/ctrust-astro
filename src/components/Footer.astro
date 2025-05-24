@@ -1,0 +1,88 @@
+---
+import dktLogo from "../assets/img/dkt-logo.svg";
+import avisoPrivacidad from "../assets/pdf/aviso-de-privacidad-dkt.pdf";
+
+import instagramIcon from "../assets/img/instagram.svg";
+import facebookIcon from "../assets/img/facebook.svg";
+import tiktokIcon from "../assets/img/tiktok.svg";
+import youtubeIcon from "../assets/img/youtube.svg";
+---
+
+<!-- Footer -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="container">
+                <!--mobile-->
+                <div class="row text-center py-5 my-5 footer d-flex d-md-none">
+                    <div class="col">
+                        <p>
+                            <img src={dktLogo.src} class="img-fluid pb-5" alt="logo BKT internacional"><br>
+                            <a href="tel:5552451211">55-5245-1211</a><br>
+                            <a href="mailto:calidad@dkt.com.mx">calidad@dkt.com.mx</a><br>
+                            Horario de atención de 9:00 a.m. a 6:00 p.m.<br>
+                            Anillo de Circunvalación 127, piso 3, Atlántida, Coyoacán, 04370, CDMX
+                        </p>
+                        <p>
+                            <a href={avisoPrivacidad} target="_blank">Aviso de Privacidad</a><br>
+                            Prevención es salud, léase instrucciones de uso
+                            Cofepris 193300201B0122<br>
+                            Todos los derechos reservados para Trust® 2024
+                        </p>
+                    </div>
+                </div>
+                <!--tablet-->
+                <!--desktop-->
+                <div class="row text-left py-5 my-5 d-none d-md-flex footer">
+                    <div class="col-6">
+                        <p>
+                            <a href="tel:5552451211">55-5245-1211</a><br>
+                            <a href="mailto:calidad@dkt.com.mx">calidad@dkt.com.mx</a><br>
+                            Horario de atención de 9:00 a.m. a 6:00 p.m.<br>
+                            Anillo de Circunvalación 127, piso 3, Atlántida, Coyoacán, 04370, CDMX
+                        </p>
+                    </div>
+                    <div class="col-6">
+                        <p>
+                            <a href={avisoPrivacidad} target="_blank">Aviso de Privacidad</a><br>
+                            Prevención es salud, léase instrucciones de uso
+                            Cofepris 193300201B0122<br>
+                            Todos los derechos reservados para Trust® 2024
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Fin Footer -->
+<div id="social-links-floating-bar" class="d-none d-lg-flex">
+    <div class="col d-flex flex-column">
+        <span class="social-group-name">LATAM</span>
+        <a href="https://www.instagram.com/condonestrust.latam" target="_blank">
+            <img src={instagramIcon.src} alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/share/18z6FgapD2/" target="_blank">
+            <img src={facebookIcon.src} alt="Facebook">
+        </a>
+        <a href="https://www.tiktok.com/@condonestrust.latam" target="_blank">
+            <img src={tiktokIcon.src} alt="TikTok">
+        </a>
+    </div>
+    <div class="col d-flex flex-column">
+        <span class="social-group-name">MEX</span>
+        <a href="https://www.instagram.com/condones_trust/" target="_blank">
+            <img src={instagramIcon.src} alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/CondonesTrustMx/" target="_blank">
+            <img src={facebookIcon.src} alt="Facebook">
+        </a>
+        <a href="https://www.tiktok.com/@condonestrust" target="_blank">
+            <img src={tiktokIcon.src} alt="TikTok">
+        </a>
+        <a href="https://www.youtube.com/@CondonesTrust" target="_blank">
+            <img src={youtubeIcon.src} alt="YouTube">
+        </a>
+    </div>
+    <span class="blocking-layer"></span>
+</div>

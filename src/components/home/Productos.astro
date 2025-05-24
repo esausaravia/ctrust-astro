@@ -1,0 +1,117 @@
+---
+import trustClasicoMobile from "../../assets/img/trust-clasico-mobile.png";
+import trustSensitivoMobile from "../../assets/img/trust-sensitivo-mobile.png";
+import trustRetardanteMobile from "../../assets/img/trust-retardante-mobile.png";
+import trustFresaMobile from "../../assets/img/trust-fresa-mobile.png";
+
+import trustNatural from "../../assets/img/trust-natural.png";
+import trustSensitivo from "../../assets/img/trust-sentitivo.png";
+import trustRetardante from "../../assets/img/trust-retardante.png";
+import trustFresa from "../../assets/img/trust-fresa.png";
+---
+<div id="productos"></div>
+<div class="row">
+    <div class="col-12 text-center">
+        <h2 class="pt-5">¿Cuáles son nuestros productos?</h2>
+        <h3 class="pt-2 pb-5">Trust tiene opciones para todos los gustos:</h3>
+    </div>
+</div>
+<div class="productos d-block d-md-none ">
+    <div class="row">
+        <div class="col-12">
+            <div id="carouselExampleIndicators1" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src={trustClasicoMobile.src} class="d-block w-100" alt="..."></div>
+                    <div class="carousel-item"><img src={trustSensitivoMobile.src} class="d-block w-100" alt="..."></div>
+                    <div class="carousel-item"><img src={trustRetardanteMobile.src} class="d-block w-100" alt="..."></div>
+                    <div class="carousel-item"><img src={trustFresaMobile.src} class="d-block w-100" alt="..."></div>
+                </div>
+                <div class="controles-slider">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="productos d-none d-md-block d-lg-none ">
+    <div class="row">
+        <div class="col-12">
+            <div id="carouselExampleIndicators2" class="carousel slide " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6"><img src={trustClasicoMobile.src} class="d-block w-100" alt="..."></div>
+                            <div class="col-md-6"><img src={trustSensitivoMobile.src} class="d-block w-100" alt="..."></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6"><img src={trustRetardanteMobile.src} class="d-block w-100" alt="..."></div>
+                            <div class="col-md-6"><img src={trustFresaMobile.src} class="d-block w-100" alt="..."></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controles-slider">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="productos d-none d-lg-block d-xl-none d-xxl-none ">
+    <div class="row">
+            <div class="col-3"><img src={trustClasicoMobile.src} class="w-100" alt="..."></div>
+            <div class="col-3"><img src={trustSensitivoMobile.src} class="w-100" alt="..."></div>
+            <div class="col-3"><img src={trustRetardanteMobile.src} class="w-100" alt="..."></div>
+            <div class="col-3"><img src={trustFresaMobile.src} class="w-100" alt="..."></div>
+    </div>
+</div>
+<div class="productos d-none d-xl-flex ">
+    <div class="row text-center productos pb-5">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <div class="caja-producto natural">
+                <img class="imagen-producto" src={trustNatural.src} alt="trust natural">
+                <p class="producto-titulo">Trust Clásico</p>
+                <p class="producto-descripcion">El placer más puro y natural.</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="caja-producto sensitivo">
+                <img class="imagen-producto"  src={trustSensitivo.src} alt="trust sensitivo">
+                <p class="producto-titulo">Trust sensitivo</p>
+                <p class="producto-descripcion">Para sensaciones más intensas, tan delgado que no se siente.</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="caja-producto retardante">
+                <img class="imagen-producto"  src={trustRetardante.src} alt="trust retardante">
+                <p class="producto-titulo">Trust Retardante</p>
+                <p class="producto-descripcion">Disfrutar por más tiempo, alargando el placer.</p>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="caja-producto fresa">
+                <img class="imagen-producto"  src={trustFresa.src} alt="trust fresa">
+                <p class="producto-titulo">Trust fresa</p>
+                <p class="producto-descripcion">Delicioso sabor y aroma a fresa que le da un toque dulce a tus encuentros.</p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

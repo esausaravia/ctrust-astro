@@ -9,11 +9,12 @@ Utilizando [Astro](https://astro.build/) podemos mantener el funcionamiento orig
 ```text
 /
 ├── public/
-│   └── favicons
+│   ├── favicon-*.png
+│   └── app/
 ├── src/
 │   ├── components/
-│   │   └── Header.astro
-│   │   └── Footer.astro
+│   │   ├── Header.astro
+│   │   ├── Footer.astro
 │   │   └── home/
 │   │       └── subsecciones de Home
 │   ├── layouts/
@@ -24,9 +25,13 @@ Utilizando [Astro](https://astro.build/) podemos mantener el funcionamiento orig
 ```
 Para saber más sobre la estructura de directorios de un projecto en Astro, ir a [Astro guide on project structure](https://docs.astro.build/en/basics/project-structure/).
 
-## 📜:scroll: Notas importantes
+## 📜 Notas importantes
 
-He omitido del repositorio los archivos PNG JPG que tenian un peso considerable, ~~porque No estaban optimizados~~, utilizando .gitignore
+Omití del repositorio los archivos PNG JPG que tenian un peso considerable, ~~porque No estaban optimizados~~, utilizando .gitignore
+
+Censuré las contraseñas expuestas en el código fuente original.
+
+El código desastre original se encuentra en el directorio ``public`` del "Initial commit"
 
 ## 🧞 Comandos
 
@@ -42,4 +47,4 @@ Todos los comandos deben ejecutarse desde la raíz del proyecto, desde una termi
 | `npm run astro -- --help` | Obtener ayuda usando Astro CLI                        |
 
 
-♠️:spades:
+♠️

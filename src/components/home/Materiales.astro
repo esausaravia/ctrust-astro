@@ -1,0 +1,44 @@
+---
+import materialesImg from "../../assets/img/materiales.png";
+---
+<div class="row mt--1"  style="background-color: #FFFFFF;" >
+    <div class="col">
+        <div class="container">
+            <div class="pt-5 pb-5"></div>
+            <div class="row pt-5">
+                <div class="col-12">
+                    <div class="col-10 offset-1">
+                        <div class="container materiales d-flex d-lg-none"><!--mobile 576-->
+                            <div class="container materiales">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="texto py-5">
+                                            Todos nuestros productos están fabricados con <b>materiales de alta calidad</b> y cuentan con gran lubricación para mayor comodidad. <b>¡Encuentra el tuyo y vive nuevas experiencias!</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col mx-3">
+                                        <img src={materialesImg.src} class="img-fluid w-100" alt="imagen de pareja">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container materiales d-none d-sm-none d-md-none d-lg-flex d-xl-flex s-xxl-flex"><!-- desktop-->
+                            <div class="row">
+                                <div class="col-8 col-lg-7 col-xl-8">
+                                    <p class="texto" >Todos nuestros productos están fabricados con <b>materiales de alta calidad</b> y cuentan con gran lubricación para mayor comodidad. <b>¡Encuentra el tuyo y vive nuevas experiencias!</b></p>
+                                </div>
+                                <div class="col-4 col-lg-5 col-xl-4">
+                                    <img src={materialesImg.src} class="img-fluid" alt="imagen de pareja">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--materiales desktop-->
+        </div>
+
+    </div>
+</div>
