@@ -439,13 +439,6 @@ h5 {
 .nav-item {
   color: #fff !important;
 }
-.productos {
-  background-image: url("../img/fondo-puntos.png"),
-    linear-gradient(to bottom, white, white); /* Color sólido en la parte inferior */
-  background-size: 100% 35%, /* Ajusta la imagen al 50% del alto */ 100% 65%; /* El color sólido ocupa el otro 50% */
-  background-position: top, bottom;
-  background-repeat: no-repeat;
-}
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
@@ -559,6 +552,26 @@ social media bar
   height: 30px;
 }
 
+#Blog a {
+  color: inherit;
+}
+#Blog .extracto {
+  opacity: 0.6;
+}
+.offset-header {
+  padding-top:60px;
+}
+.blog-article .featured-image {
+  max-width: 100%;
+  max-height: calc(100vh - 120px);
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.blog-article-content h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
   @media (max-width: 991px) {
     .collapse:has(.show) {
         display: none;
@@ -818,11 +831,11 @@ social media bar
           seccion de productos
       */
     .productos {
-      background-image: url("../img/fondo-puntos.png"),
-        linear-gradient(to bottom, white, white);
       background-size: 100% 30%, 100% 70%;
-      background-position: top, bottom;
-      background-repeat: no-repeat;
+    }
+    .productos .container-lg {
+      max-width: 970px;
+      margin: 0 auto;
     }
 
     .caja-producto {

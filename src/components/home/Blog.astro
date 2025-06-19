@@ -1,0 +1,73 @@
+---
+import type { ImageMetadata } from "astro";
+import blog1img from "../../assets/img/blog-doble-penetracion.webp"
+import blog2img from "../../assets/img/blog-sexting.webp"
+import blog3img from "../../assets/img/blog-que-es-el-edging.webp";
+import blog4img from "../../assets/img/blog-que-es-el-queening-la-sillita-de-la-reina-o-el-facesitting.webp";
+import { Image } from "astro:assets"
+
+import link1 from "../../pages/blog/doble-penetracion-como-experimentarla-de-manera-segura-y-placentera.astro"
+
+type BlogEntry = {
+  title: string;
+  image: ImageMetadata;
+  link: string;
+  excerpt: string;
+}
+
+const blogPosts: BlogEntry[] = [
+  {
+    title: "¿Qué es el queening, la sillita de la reina o el facesitting? Cómo hacerlo y qué beneficios tiene",
+    link: new URL('blog/que-es-el-queening-la-sillita-de-la-reina-o-el-facesitting.html', Astro.url).pathname,
+    image: blog4img,
+    excerpt: "En el mundo de la sexualidad y las prácticas BDSM, existen diversas técnicas y actividades que buscan explorar el placer, la confianza y…"
+  },
+  {
+    title: "¿Qué es el edging y cómo practicarlo?",
+    link: new URL('blog/que-es-el-edging.html', Astro.url).pathname,
+    image: blog3img,
+    excerpt: "El edging, también conocido como “control del orgasmo” o “técnica del borde”, es una práctica sexual que consiste en llevarse…"
+  },
+  {
+    title: "Doble penetración: cómo experimentarla de manera segura y placentera",
+    link: new URL('blog/doble-penetracion-como-experimentarla-de-manera-segura-y-placentera.html', Astro.url).pathname,
+    image: blog1img,
+    excerpt: "La doble penetración es una práctica sexual que involucra la penetración simultánea de dos o más objetos,  en partes del cuerpo. Aunque…"
+  },
+  {
+    title: "Cómo practicar “sexting” de manera segura",
+    link: new URL('blog/como-practicar-sexting-de-manera-segura.html', Astro.url).pathname,
+    image: blog2img,
+    excerpt: "No cabe duda que con el paso de los años las prácticas sexuales van evolucionando y nosotros con ellas, esto no quiere decir que todas te…"
+  }
+]
+---
+<section id="Blog" class="container-lg py-5">
+  <h2 class="text-center py-4">Blog</h2>
+  <div class="row justify-content-center">
+
+    {blogPosts.map((post) => (
+      <div class="col-12 col-md-6 col-lg-4 px-2">
+        <article class="">
+          <figure>
+            <a href={post.link}>
+              <Image src={post.image} alt={post.title}
+                class="img-fluid"
+                widths={[320,375,400,736,928,1288,post.image.width]}
+                format="webp"
+              />
+            </a>
+          </figure>
+          <h4 class="fs-5 lh-base">
+            <a href={post.link}>
+              {post.title}
+            </a>
+          </h4>
+          <p class="fs-6 lh-base extracto">
+            {post.excerpt}
+          </p>
+        </article>
+      </div>
+    ))}
+  </div>
+</section>

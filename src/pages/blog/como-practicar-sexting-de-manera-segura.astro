@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import featuredImage from "../../assets/img/blog-sexting.webp"
+import { Image } from "astro:assets"
+
+const pageTitle = `Cómo practicar “sexting” de manera segura`;
+---
+<Layout title={pageTitle} bodyClass="blog blog-article">
+  <article class="container-lg offset-header">
+    <header>
+      <figure>
+        <Image src={featuredImage} alt={pageTitle}
+          class="featured-image"
+          widths={[320,375,400,768,1024,1280,1440,1920,featuredImage.width]}
+          format="webp"
+        />
+      </figure>
+      <h1 class="blog-article-title mb-5 text-center">{pageTitle}</h1>
+    </header>
+    <section class="row justify-content-center">
+      <div class="blog-article-content col-12 col-lg-9 col-xl-8 px-3">
+        <p>No cabe duda que con el paso de los años las prácticas sexuales van evolucionando y nosotros con ellas, esto no quiere decir que todas te deban gustar pero si llegan a ser de tu interés siempre es importante estar bien informad@s, por eso hoy queremos hablarte del “sexting” para que, si lo practicas o planeas hacerlo, lo hagas de una manera segura y puedas disfrutarlo sin temor alguno.</p>
+
+        <p>Antes de adentrarnos en el tema hay que aclarar que el término “sexting” proviene de dos palabras en inglés: sex (sexo) y texting (enviar mensajes), y consiste en mantener una conversación erótica con alguna persona a través de un dispositivo móvil de manera consensuada.</p>
+
+        <h3>¿Cómo practicar “sexting” de manera segura?	</h3>
+        <p>Es importante mencionar que nada garantiza que la práctica sea 100% segura, pero eso no quita que puedas tomar algunas precauciones para que tu identidad y privacidad no estén en riesgo, por lo que te dejamos algunos tips:</p>
+
+        <h4>1. Elige una plataforma, app o sitio web seguro</h4>
+        <p>Esto va a permitir que tengas toda la tranquilidad del mundo, pues tu información no se estará filtrando por otros sitios de internet; también te recomendamos que utilices un navegador privado o incógnito.</p>
+
+        <h4>2. Trata de estar en un lugar que no sea fácil de reconocer	</h4>
+        <p>Es normal que debido a la adrenalina que se siente no se le tome mucha importancia a este paso, pero es fundamental porque esto ayudará a que si por alguna razón se viola tu privacidad, no se pueda reconocer fácilmente el entorno o lugar en el que estás.</p>
+
+        <h4>3. No muestres tu rostro</h4>
+        <p>Por mucho que te sientas en confianza más vale prevenir, por eso es importante utilizar emojis o filtros para cubrir tu rostro o algún rasgo que te identifique, con esto te aseguras de que no se conozca tu identidad por si se llegarán a filtrar tus fotos.</p>
+
+        <h4>4. Hazlo con alguien de confianza</h4>
+        <p>Es normal que a este paso a veces no se le de la relevancia que se requiere, pero se debe tener en cuenta que para realizar esta práctica debes conocer a la persona con la que la realizarás.</p>
+        <p>Recuerda que si de alguna manera se llega a violar tu privacidad existe la “Ley Olimpia”, que se encarga de proteger el derecho a la intimidad personal, sancionar el ciberacoso (ya que con este se puede dar la violencia sexual) y a concientizar a través de La Ley General de Acceso de las Mujeres a una Vida Libre de Violencia a las instituciones públicas y privadas sobre los derechos sexuales y la violencia digital.</p>
+        <p>Cada persona es libre de elegir cómo vivir y ejercer su sexualidad, pero no olvides que nunca está de más cuidarse. ¡Mucho ojo!</p>
+
+      </div>
+    </section>
+  </article>
+</Layout>

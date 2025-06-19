@@ -10,28 +10,40 @@ import "../assets/js/index";
 
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import resolveLink from "../utils/resolve-link";
+
+const {title, bodyClass} = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Condones Trust</title>
+	<title>{ !!title ? (title+' | ') : '' } Condones Trust</title>
+	{ import.meta.env.BASE_URL!=="/" ? (<base href={import.meta.env.BASE_URL} />) : ''}
 
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon-192x192.png">
+	<!-- Google Tag Manager Head -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PFZWBFN8');</script>
+	<!-- End Google Tag Manager -->
+
+	<link rel="icon" type="image/png" sizes="16x16" href={resolveLink("/favicon-16x16.png")}>
+	<link rel="icon" type="image/png" sizes="32x32" href={resolveLink("/favicon-32x32.png")}>
+	<link rel="apple-touch-icon" sizes="180x180" href={resolveLink("/favicon-180x180.png")}>
+	<link rel="icon" type="image/png" sizes="192x192"  href={resolveLink("/favicon-192x192.png")}>
 
 	<script defer src={bootstrap}></script>
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.js" integrity="sha512-docBEeq28CCaXCXN7cINkyQs0pRszdQsVBFWUd+pLNlEk3LDlSDDtN7i1H+nTB8tshJPQHS0yu0GW9YGFd/CRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js" integrity="sha512-KFHXdr2oObHKI9w4Hv1XPKc898mE4kgYx58oqsc/JqqdLMDI4YjOLzom+EMlW8HFUd0QfjfAvxSL6sEq/a42fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/localization/messages_es.min.js" integrity="sha512-Kcb2OYCSBj5/343s73G4ue17xTxHhWeLwfzE8gDQh9EAbWyEt8Jh6cNgGt86XgjS0JRzIlARtVPLa+o57+HQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="bg-dark">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQJ63V7S"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<body class={`bg-dark `+bodyClass}>
+	<!-- Google Tag Manager (noscript) Body -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFZWBFN8"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<Header />
 	<slot />

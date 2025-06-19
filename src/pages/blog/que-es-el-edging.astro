@@ -1,0 +1,61 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import featuredImage from "../../assets/img/blog-que-es-el-edging.webp";
+import { Image } from "astro:assets"
+
+const pageTitle = `¿Qué es el edging y cómo practicarlo?`;
+---
+<Layout title={pageTitle} bodyClass="blog blog-article">
+  <article class="container-lg offset-header">
+    <header>
+      <figure>
+        <Image src={featuredImage} alt={pageTitle}
+          class="featured-image"
+          widths={[320,375,400,768,1024,1280,1440,1920,featuredImage.width]}
+          format="webp"
+        />
+      </figure>
+      <h1 class="blog-article-title mb-5 text-center">{pageTitle}</h1>
+    </header>
+    <section class="row justify-content-center">
+      <div class="blog-article-content col-12 col-lg-9 col-xl-8 px-3">
+        <p>El edging, también conocido como “control del orgasmo” o “técnica del borde”, es una práctica sexual que consiste en llevarse al límite de la excitación sexual sin llegar al orgasmo, manteniendo el estado de máxima tensión durante un tiempo determinado. Esta técnica se ha popularizado en los últimos años por su capacidad para aumentar el placer, prolongar la experiencia sexual y mejorar el control sobre la eyaculación o el orgasmo, tanto en solitario como en pareja.</p>
+
+        <h3>¿En qué consiste el edging?</h3>
+
+        <p>El edging implica estimularse de manera que se alcance un nivel muy alto de excitación, pero sin permitir que la sensación llegue al clímax. Cuando se siente que el orgasmo está próximo, se detiene o se reduce la estimulación, permitiendo que la excitación disminuya antes de volver a estimular. Este proceso puede repetirse varias veces, generando una mayor intensidad y duración del placer cuando finalmente se permite llegar al orgasmo.</p>
+
+        <h3>Beneficios de practicar el edging</h3>
+
+        <ul>
+          <li>Incrementa el placer: la tensión acumulada aumenta la intensidad del orgasmo final.</li>
+          <li>Mejora el control: ayuda a controlar la eyaculación y prolongar las relaciones sexuales.</li>
+          <li>Potencia la sensibilidad: la práctica frecuente puede aumentar la sensibilidad y el disfrute.</li>
+          <li>Fortalece la conexión: en pareja, puede fortalecer la comunicación y la confianza mutua.</li>
+        </ul>
+
+        <h3>Cómo practicar el edging</h3>
+
+        <ol>
+          <li>Preparación: encuentra un espacio cómodo y sin interrupciones. Puedes practicar solo o en pareja. </li>
+          <li>Estimulación: comienza con la estimulación que prefieras, ya sea manual, oral, con juguetes o durante la penetración.</li>
+          <li>Reconoce tu nivel de excitación: presta atención a las señales de tu cuerpo para identificar cuándo estás cerca del orgasmo.</li>
+          <li>Detente o reduce la estimulación: cuando sientas que estás a punto de llegar al clímax, detén la estimulación o disminúyela.</li>
+          <li>Respira y relájate: toma respiraciones profundas para reducir la excitación.</li>
+          <li>Repite el proceso: puedes volver a estimularte varias veces, hasta que decidas que es momento de permitirte el orgasmo.</li>
+          <li>Disfruta del clímax final: cuando sientas que el momento es adecuado, permite que la excitación llegue y disfruta del orgasmo.</li>
+        </ol>
+
+        <h3>Consejos para una práctica segura y placentera</h3>
+
+        <ul>
+          <li>La comunicación en pareja es fundamental para que ambos disfruten y se sientan cómodos.</li>
+          <li>No te exijas demasiado; la práctica requiere paciencia y autoconocimiento.</li>
+          <li>Usa lubricantes si lo deseas para aumentar el confort.</li>
+          <li>Si sientes molestias o incomodidad, detente y ajusta la técnica.</li>
+        </ul>
+
+      </div>
+    </section>
+  </article>
+</Layout>

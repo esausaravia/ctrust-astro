@@ -4,87 +4,90 @@ import instagramSvg from "../assets/img/instagram.svg";
 import fbSvg from "../assets/img/facebook.svg";
 import tiktokSvg from "../assets/img/tiktok.svg";
 import ytbSvg from "../assets/img/youtube.svg";
+import resolveLink from "../utils/resolve-link.ts";
 ---
 
-	<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 1  aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-nav ">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<DktLogo width="40" height="30" />
-			</a>
-			<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 1  aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>-->
-			<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-				<ul class="navbar-nav mb-2 mb-md-0">
-					<li class="nav-item p1">
-						<a class="nav-link text-end text-lg-left" aria-current="page" href="#productos">Producto</a>
-					</li>
-					<li class="nav-item d-none d-lg-flex">
-						<span class="nav-link disabled"> | </span>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-end text-lg-left" href="#quienes-somos">¿Quiénes somos?</a>
-					</li>
-					<li class="nav-item d-none d-lg-flex">
-						<span class="nav-link disabled"> | </span>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-end text-lg-left" href="#mision-vision">Misión y Visión</a>
-					</li>
-					<li class="nav-item d-none d-lg-flex">
-						<span class="nav-link disabled"> | </span>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-end text-lg-left" href="#quien-nos-respalda">¿Quién nos respalda?</a>
-					</li>
-					<li class="nav-item d-none d-lg-flex">
-						<span class="nav-link disabled"> | </span>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-end text-lg-left" href="#contacto">Contacto</a>
-					</li>
-					<li class="nav-item d-lg-none pt-5 text-center">
-						Síguenos en nuestras redes sociales
-					</li>
-					<li class="nav-item d-lg-none pt-2 text-center">
-						LATAM
-					</li>
-					<li class="redes-sociales nav-item d-flex d-lg-none py-3 justify-content-around">
-						<a href="https://www.instagram.com/condonestrust.latam" target="_blank">
-							<img src={instagramSvg.src} alt="Instagram">
-						</a>
-						<a href="https://www.facebook.com/share/18z6FgapD2/" target="_blank">
-							<img src={fbSvg.src} alt="Facebook">
-						</a>
-						<a href="https://www.tiktok.com/@condonestrust.latam" target="_blank">
-							<img src={tiktokSvg.src} alt="TikTok">
-						</a>
-					</li>
-					<li class="nav-item d-lg-none text-center">
-						México
-					</li>
-					<li class="redes-sociales nav-item d-flex d-lg-none py-3 justify-content-around">
-						<a href="https://www.instagram.com/condones_trust/" target="_blank">
-							<img src={instagramSvg.src} alt="Instagram">
-						</a>
-						<a href="https://www.facebook.com/CondonesTrustMx/" target="_blank">
-							<img src={fbSvg.src} alt="Facebook">
-						</a>
-						<a href="https://www.tiktok.com/@condonestrust" target="_blank">
-							<img src={tiktokSvg.src} alt="TikTok">
-						</a>
-						<a href="https://www.youtube.com/@CondonesTrust" target="_blank">
-							<img src={ytbSvg.src} alt="YouTube">
-						</a>
-					</li>
-				</ul>
-			</div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-nav ">
+	<div class="container-fluid">
+		<a class="navbar-brand" href={resolveLink('#')}>
+			<DktLogo width="40" height="30" />
+		</a>
+		<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" 1  aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>-->
+		<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+			<ul class="navbar-nav mb-2 mb-md-0">
+				<li class="nav-item p1">
+					<a class="nav-link text-end text-lg-left" aria-current="page" href={resolveLink("/#productos")}>Producto</a>
+				</li>
+				<li class="nav-item d-none d-lg-flex">
+					<span class="nav-link disabled"> | </span>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-end text-lg-left" href={resolveLink("/#quienes-somos")}>¿Quiénes somos?</a>
+				</li>
+				<li class="nav-item d-none d-lg-flex">
+					<span class="nav-link disabled"> | </span>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-end text-lg-left" href={ resolveLink("/#mision-vision") }>Misión y Visión</a>
+				</li>
+				<li class="nav-item d-none d-lg-flex">
+					<span class="nav-link disabled"> | </span>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-end text-lg-left" href={ resolveLink("/#quien-nos-respalda") }>¿Quién nos respalda?</a>
+				</li>
+				<li class="nav-item d-none d-lg-flex">
+					<span class="nav-link disabled"> | </span>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-end text-lg-left" href={resolveLink('/blog.html')}>Blog</a>
+				</li>
+				<li class="nav-item d-none d-lg-flex">
+					<span class="nav-link disabled"> | </span>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-end text-lg-left" href={resolveLink("/#contacto")}>Contacto</a>
+				</li>
+				<li class="nav-item d-lg-none pt-5 text-center">
+					Síguenos en nuestras redes sociales
+				</li>
+				<li class="nav-item d-lg-none pt-2 text-center">
+					LATAM
+				</li>
+				<li class="redes-sociales nav-item d-flex d-lg-none py-3 justify-content-around">
+					<a href="https://www.instagram.com/condonestrust.latam" target="_blank">
+						<img src={instagramSvg.src} alt="Instagram">
+					</a>
+					<a href="https://www.facebook.com/share/18z6FgapD2/" target="_blank">
+						<img src={fbSvg.src} alt="Facebook">
+					</a>
+					<a href="https://www.tiktok.com/@condonestrust.latam" target="_blank">
+						<img src={tiktokSvg.src} alt="TikTok">
+					</a>
+				</li>
+				<li class="nav-item d-lg-none text-center">
+					México
+				</li>
+				<li class="redes-sociales nav-item d-flex d-lg-none py-3 justify-content-around">
+					<a href="https://www.instagram.com/condones_trust/" target="_blank">
+						<img src={instagramSvg.src} alt="Instagram">
+					</a>
+					<a href="https://www.facebook.com/CondonesTrustMx/" target="_blank">
+						<img src={fbSvg.src} alt="Facebook">
+					</a>
+					<a href="https://www.tiktok.com/@condonestrust" target="_blank">
+						<img src={tiktokSvg.src} alt="TikTok">
+					</a>
+					<a href="https://www.youtube.com/@CondonesTrust" target="_blank">
+						<img src={ytbSvg.src} alt="YouTube">
+					</a>
+				</li>
+			</ul>
 		</div>
-	</nav>
+	</div>
+</nav>
