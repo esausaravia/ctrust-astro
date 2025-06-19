@@ -64,7 +64,8 @@ function jQueryReady(){
       email1: {required: "Please enter an email address.",email: "Please enter a valid email address."},
       edad1: {}
     },
-    submitHandler: function(form) {
+    submitHandler: function() {
+      console.log(`form_register1 submitHandler`, arguments)
         if(  $("#edad1").val() < 18){
 
             $('.alert1').removeClass('alert-success');
@@ -130,7 +131,8 @@ function jQueryReady(){
       email: {required: "Please enter an email address.",email: "Please enter a valid email address."},
       edad: {}
     },
-    submitHandler: function(form) {
+    submitHandler: function() {
+      console.log(`form_register submitHandler`, arguments)
         console.log("aqui");
         if(  $("#edad").val() < 18){
 
@@ -154,7 +156,7 @@ function jQueryReady(){
 
             const formData = new FormData(document.getElementById('form_register'));
 
-             fetch('app/api.php', {
+             fetch('/app/api.php', {
                  method: 'POST',
                  body: formData
              })
@@ -200,10 +202,11 @@ function jQueryReady(){
           }, 3000);
           return false;
       }
+    return true;
   });
 
   $('#btn_activar1').click(function() {
-  console.log("act 1");
+    console.log("act 1");
 
     $('.alert1').removeClass('alert-success');
     $('.alert1').removeClass('alert-warning');
@@ -220,9 +223,11 @@ function jQueryReady(){
         }, 3000);
         return false;
     }
+    console.log('act1 end');
+    return true;
   });
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-$(jQueryReady)
+  $(jQueryReady)
 });

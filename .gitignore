@@ -28,3 +28,5 @@ src/assets/img/*.png
 src/assets/img/*.jpg
 src/assets/img/*.jpeg
 src/assets/img/*.gif
+notes.txt
+rsync-exclude.txt
